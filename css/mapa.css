@@ -1,0 +1,152 @@
+main #mapa{
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+main #mapa .button{
+    position: absolute;
+}
+
+main #mapa #zoomOut,
+main #mapa #zoomIn{
+    display:block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+}
+
+main #mapa .paises{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    stroke-linejoin: round;
+    stroke:#000;
+    fill: none;
+    object-fit: cover;
+}
+
+main #mapa .paises.move{
+    cursor: grabbing;
+}
+
+main #mapa .paises path{
+    fill:#f2f2f2;
+    fill-rule:evenodd;
+}
+
+main #mapa .paises .pais:hover{
+    cursor: pointer;
+    fill:black;
+}
+
+main #mapa .paises .pais.active{
+    fill: green;
+}
+
+.contador {
+    position: absolute;
+    bottom: 5%;
+    margin-left:1.5rem;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    -webkit-appearance: none;
+}
+
+main #mapa .popup.hide{
+    display: none;
+}
+
+main #mapa .popup{
+    position: absolute;
+    z-index: 5;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 15%;
+    min-height: 15%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+main #mapa .popup.move{
+    cursor: grabbing;
+}
+
+
+main #mapa .popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 0.3rem 0.2rem;
+}
+
+main #mapa .popup-header a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+main #mapa .popup-header a:hover{
+    color: #74A1AD;
+}
+
+main #mapa .popup-header .close-button button{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+main #mapa .popup-body{
+    display: flex;
+    flex-grow: 1;
+    background-color: rgba(116, 161, 173, 0.8);
+}
+
+main #mapa .popup-body .popup-flag,
+main #mapa .popup-body .popup-content{  
+    min-width: fit-content;
+}
+
+main #mapa .popup-body .popup-flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+main #mapa .popup-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main #mapa .popup-body .popup-content ul{
+    padding: 0.5rem 1.5rem;
+}
+
+main #mapa .popup-body .popup-content ul{
+    list-style-type:initial;
+}
+
+main #mapa .popup-body .popup-content ul li{
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    color: black;
+}
+
+main #mapa .popup-body .popup-content ul li span{
+    color:white;
+}

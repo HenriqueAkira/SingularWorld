@@ -1,0 +1,125 @@
+main #contato{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/img-contato.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+main #contato .titulo{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 4rem;
+    color: black;
+    font-family: 'Special Elite', cursive; 
+}
+
+main #contato .formulario{
+    height: 45vh;
+}
+
+main #contato .formulario form{
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start; 
+}
+
+main #contato .formulario form .local{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+main #contato .formulario form input,
+main #contato .formulario form textarea{
+    width: 30vw;
+}
+
+main #contato .formulario form select{
+    width: 45%;
+}
+
+main #contato .formulario form input,
+main #contato .formulario form textarea,
+main #contato .formulario form select{
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+main #contato .formulario form button{
+    width: 4rem;
+    height: 2rem;
+    border: transparent;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 0.8rem; 
+    transition: 0.5s; 
+}
+
+main #contato .formulario form button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+main #contato .integrantes{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+main #contato .integrantes .vinicius ,
+main #contato .integrantes .henrique {
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+main #contato .integrantes h1{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Special Elite', cursive;
+}
+
+main #contato .integrantes figure{
+    filter: drop-shadow(-1px 6px 3px rgba(0,0,0,0.5));
+}
+
+main #contato .integrantes .vinicius img,
+main #contato .integrantes .henrique img{
+    object-fit: contain;
+    clip-path: circle();
+    width: 30vw;
+    height: 30vh;
+    margin:0.5rem 0; 
+}
+
+main #contato .integrantes .social-media i{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    margin-left: 0.5rem;
+    transition: 0.5s;
+}
+
+main #contato .integrantes .social-media i:hover{
+    color: white;
+}
+

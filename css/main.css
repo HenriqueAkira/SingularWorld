@@ -1,0 +1,104 @@
+body{
+    overflow-x:hidden;
+}
+
+header{
+    background-color: rgba(0,0,0, 0.7);
+    
+}
+
+header .menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100vw; 
+}
+
+header .menu a{
+    color: white;
+}
+
+.menu .logo{
+    flex-grow: 0;
+}
+
+.menu .logo img{
+    width:15rem;
+    height: 10rem;
+}
+
+.menu .categoria{
+    flex-grow: 4;
+}
+
+.menu .categoria ul{
+    display:flex; 
+    justify-content: space-around; 
+}
+
+.menu .categoria li a{
+    text-decoration: none;
+    font-size:3rem;
+    font-family: 'Marck Script', cursive;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu .categoria ul li a:hover{
+    color:#FCDF17;
+}
+
+.menu .icon{
+    flex-grow: 1;
+}
+
+.menu .icon ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .icon ul li{
+    margin-left: 1rem;
+}
+
+.menu .icon ul li a{
+    font-size: 2rem;
+}
+
+
+.menu .icon ul li a .fa-facebook-square:hover{
+    color:#21267A;
+}
+
+.menu .icon ul li a .fa-instagram:hover{
+    color:#E6267A;
+}
+
+.menu .icon ul li a .fa-youtube:hover{
+    color:#C40001;
+}
+
+.rodape{
+    background-color: rgba(0,0,0, 0.7);
+    width: 100vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodape img{
+    width:15rem;
+    height: 10rem;
+}
+.rodape p{
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
